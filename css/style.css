@@ -27,6 +27,7 @@ button {
   --title-text-color: #303030;
   --accent-color: #ff6c00;
   --primary-white-color: #ffffff;
+  --primery-dark-color: #191c26;
 }
 
 a {
@@ -37,11 +38,22 @@ body {
   background-color: #ffffff;
   color: var(--primary-text-color);
 
-  font-family: Open Sans, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.1em;
   font-size: 11px;
   line-height: 1.36;
+}
+h2.section-title {
+  color: var(--title-text-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 42px;
+  line-height: 1.17;
+}
+h2.section-title.lighten {
+  color: #ffffff;
 }
 
 .list {
@@ -55,14 +67,7 @@ body {
   color: var(--title-text-color);
   text-transform: uppercase;
 }
-.section-title {
-  color: var(--title-text-color);
-  font-family: Raleway;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  font-size: 42px;
-  line-height: 1.17;
-}
+
 .primary-btn {
   color: var(--primary-white-color);
 
@@ -189,8 +194,9 @@ body {
 /* Футер */
 .footer {
   background-color: #f7f7f7;
+  letter-spacing: 0.02em;
 }
-.footer-title {
+.section-title.lighten {
   color: var(--primary-white-color);
   font-family: Raleway;
 
@@ -203,22 +209,15 @@ body {
 .footer a:focus {
   color: var(--accent-color);
 }
-.footer-copyright {
+.copy-text {
   color: var(-secondary-text-color);
-  letter-spacing: 0.2em;
 }
-.footer.list {
-  letter-spacing: 0.02em;
-}
-.contact-text {
+
+.shedule-box p {
   font-weight: 400;
-  letter-spacing: 0.02em;
   font-size: 18px;
   line-height: 1.67;
 }
-.contact.list {
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  font-size: 18px;
-  line-height: 1.67;
-}
+
+/* section-title lighten 
+  */
