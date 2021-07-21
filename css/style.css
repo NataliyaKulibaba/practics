@@ -55,30 +55,60 @@ h2.section-title {
 h2.section-title.lighten {
   color: #ffffff;
 }
-
-.list {
-  list-style: none;
+/* .hero-description {
+  color: var(--secondary-text-color);
+} */
+.hero-description {
+  color: var(--secondary-text-color);
+  font-weight: 400px;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 1.67;
 }
 .suptitle-secondary {
   color: rgba(157, 164, 189, 0, 6);
   text-transform: uppercase;
 }
+a .nav-link {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.33;
+}
+a .nav-link:hover {
+  color: var(--accent-color);
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .suptitle-primary {
   color: var(--title-text-color);
   text-transform: uppercase;
 }
 
 .primary-btn {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid var(--accent-color);
   color: var(--primary-white-color);
 
   letter-spacing: 0.09em;
   font-size: 12px;
-  line-height: 1.33x;
+  line-height: 1.33;
 
   text-transform: uppercase;
 }
 
+.primary-btn.darcken {
+  color: var(--title-text-color);
+}
+
 /* NavBar */
+/* .nav-link li {
+  display: inline-block;
+} */
 .navbar a {
   background-color: var(--secondary-text-color);
   color: var(--primary-white-color);
@@ -95,13 +125,17 @@ h2.section-title.lighten {
   text-transform: uppercase;
 }
 
-.sidebar {
+.sidebar .social-link {
   color: var(--title-text-color);
-
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
 }
-.sidebar :hover,
-.sidebar:focus {
+.sidebar .social-link :hover,
+.sidebar .social-link:focus {
   color: var(--accent-color);
 }
 /* Герой */
@@ -115,14 +149,6 @@ h2.section-title.lighten {
   letter-spacing: 0.05em;
   font-size: 72px;
   line-height: 1.18;
-}
-
-.hero-description {
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  font-size: 18px;
-  line-height: 1.67;
 }
 
 /* О нас */
@@ -217,6 +243,7 @@ h2.section-title.lighten {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
+  color: var(--text-secondary);
 }
 
 /* section-title lighten 
