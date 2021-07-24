@@ -43,12 +43,13 @@ body {
   letter-spacing: 0.1em;
   font-size: 11px;
   line-height: 1.36;
+  margin: 0;
 }
-.section-box {
-  width: 1280px;
+* {
+  box-sizing: border-box;
 }
- 
-  .list {
+
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -60,6 +61,7 @@ h4,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 h2.section-title {
@@ -74,7 +76,11 @@ h2.section-title.lighten {
   color: #ffffff;
 }
 .section-box {
-  width: 1280px;
+  width: 100%;
+}
+.header {
+  height: 100vh;
+  width: 100%;
 }
 /* .hero-description {
   color: var(--secondary-text-color);
@@ -119,10 +125,11 @@ h2.section-title.lighten {
 }
 
 /* NavBar */
-.navbar {
+.nav-holder {
   display: flex;
   align-items: center;
   background-color: var(--secondary-text-color);
+  height: 56px;
 }
 .nav-links.list {
   display: flex;
@@ -135,6 +142,14 @@ h2.section-title.lighten {
 }
 .nav-links .item {
   margin-left: 40px;
+}
+.navbar {
+  padding-top: 30px;
+}
+.logo-img {
+  margin: 0 32px;
+  width: 68px;
+  height: 56px;
 }
 /* .nav-links .item:not(:last-child) {
   margin-right: 40px;
@@ -164,8 +179,21 @@ h2.section-title.lighten {
 .contacts {
   text-transform: uppercase;
 }
+.nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 30px 55px 0 55px;
+  box-sizing: border-box;
+}
 
 /* Sidebar */
+.sidebar {
+  height: 155px;
+  width: 100%;
+}
 
 .social-box .social-link {
   color: var(--title-text-color);
@@ -180,30 +208,44 @@ h2.section-title.lighten {
 .social-box .social-link:focus {
   color: var(--accent-color);
 }
-/* Герой */
+/* Слайдер */
+/* .slider{
+background-image: url(../images/Slider.jpg);
+} */
+.slider {
+  width: calc(100%-155px);
+  background-image: url(../images/Slider.jpg);
 
-.hero-title {
-  background-color: var(--secondary-text-color);
-  color: var(--primary-white-color);
+  /* Герой */
 
-  font-family: Raleway;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  font-size: 72px;
-  line-height: 1.18;
-}
+  .hero-title {
+    /* background-color: var(--secondary-text-color); */
+    color: var(--primary-white-color);
 
-/* О нас */
-.section-box.about {
-  display: flex;
-  padding: 130px 91px 130px 55px;
-}
-/* .container.about {
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 72px;
+    line-height: 1.18;
+  }
+
+  /* О нас */
+  .section-box.about {
+    display: flex;
+    padding: 130px 91px 130px 55px;
+    /* width: 1280px; */
+  }
+  /* .container.about {
   display: flex;
 } */
-  .about-image-box > img:not(:last-child) {
-    margin-right: 30px;
+  .about-image-box {
+    justify-content: space-between;
+    width: 48%;
+    min-width: 270px;
   }
+  /* .about-image-box > img:not(:last-child) {
+    margin-right: 30px;
+  } */
 
   .section-suptitle {
     font-weight: 400;
@@ -235,13 +277,15 @@ h2.section-title.lighten {
   }
   .text-about {
     margin-left: 64px;
-    width: 500px;
+    /* width: 500px; */
+    width: 48%;
   }
 
   /* Услуги и цены */
-.section-box.price {
+  .section-box.price {
     padding: 130px 55px;
-    background-color: black;
+    background-image: url(../images/цены.jpg);
+    width: 1280px;
   }
   .suptitle-secondary.price {
     display: inline-block;
@@ -262,47 +306,65 @@ h2.section-title.lighten {
     letter-spacing: 0.02em;
     font-size: 18px;
     line-height: 1.67;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   .price.list {
-    display: inline-block;
+    display: flex;
     padding: 30px 40px;
     margin-bottom: 50px;
     width: 585px;
   }
-   .price-box {
-  display: flex;
-}
+  .price-box {
+    display: flex;
+    /* width: 1170px; */
+    margin-right: 0px;
+  }
   .price-item > p {
     display: inline-block;
   }
   /* a.primary-btn {
     display: inline-block;
   } */
+
   /* Почему мы */
   .section-box.why {
     display: flex;
-    
+    justify-content: space-between;
+    width: 48%;
+    padding: 0 100px;
   }
-  
+
   .number-container {
     display: flex;
-    flex-wrap: wrap;
-    margin: 121px 130px 130px 155px;
-    min-width: 370px;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* margin: 121px 130px 130px 155px; */
   }
   .number-box {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    width: 122px;
-    height: 93px;
+    width: 170px;
+    height: 132px;
+    width: 48%;
     background-color: #f7f7f7;
-    padding: 20px 24px;
+    /* padding: 20px 24px; */
     margin-right: 30px;
     margin-bottom: 30px;
     text-align: center;
   }
   .number-box:nth-child(2n) {
     margin-right: 0px;
+  }
+  .number-box p,
+  .number-box span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .number-box span {
+    margin: 6px 24px 20px;
   }
   .number-box p {
     color: var(--title-text-color);
@@ -312,6 +374,12 @@ h2.section-title.lighten {
     font-size: 42px;
     line-height: 1.36;
     margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .numder-box .numder-box.last {
+    width: 130px;
+    height: 93px;
   }
   .description-container {
     display: inline-block;
@@ -341,6 +409,16 @@ h2.section-title.why {
 }
 .master.list {
   display: flex;
+  justify-content: space-between;
+  flex-basis: 300px;
+}
+.master-card p,
+.master-card span {
+  display: block;
+}
+
+.master-card img {
+  margin-bottom: 30px;
 }
 .master-card:not(:last-child) {
   margin-right: 30px;
@@ -350,6 +428,7 @@ h2.section-title.why {
 }
 
 .master-card p {
+  margin-bottom: 8px;
   color: var(--title-text-color);
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -358,6 +437,7 @@ h2.section-title.why {
   text-align: center;
 }
 .master-card span {
+  margin-bottom: 30px;
   color: var(--accent-color);
 
   font-weight: 400;
@@ -366,8 +446,21 @@ h2.section-title.why {
   line-height: 1.36;
   text-align: center;
 }
-.master-social-link {
+.master-social.link {
+  display: inline-block;
+  text-align: center;
 }
+/* Галерея */
+.section-box.gallery {
+  padding: 130px 55px;
+}
+.image-gallery.list {
+  display: flex;
+}
+.image-gallery.list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Футер */
 .footer {
   background-color: #f7f7f7;
