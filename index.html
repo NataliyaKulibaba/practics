@@ -1,231 +1,63 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>BarberShop</title>
+  <title>Code Sandbox</title>
+  <link rel='stylesheet' href="./css/style.css" />
 </head>
+
 <body>
-  <header class="header">
-    
-      <!-- NavBar -->
-      <nav class="navbar">
-        <div class="nav-holder">
-          <img src="./images/Logo.png" alt="Название компании" class="logo-img">
-          <ul class="nav-links list">
-            <li class="item"><a href="#about-section" class="nav-link">О нас</a></li>
-            <li class="item"><a href="#price-section" class="nav-link">Услуги и цены </a> </li>
-            <li class="item"><a href="#why-section" class="nav-link">Мастера </a></li>
-            <li class="item"><a href="#masters-section" class="nav-link">Контакты </a></li>
-          </ul>
-          <div class="contacts">
-            <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
-            <a href="#footer" class="primary-btn">Онлайн запись</a>
-          </div>
-        </div>
-      </nav>
-      <!-- SideBar -->
-      <aside class="sidebar">
-        <div class="social-box">
-          <a href="#" class="social-link">Instagram</a>
-        <a href="#" class="social-link">Youtube</a>
-        </div>  
-      </aside>
-       
-      <div class="slider">
-          <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-description">Мы эксперты в модных мужских стрижках.
-          Работаем быстро, осторожно и со вкусом.</p>
-      </div>
+  <header>
+    <h1>Lesson 10</h1>
+    <h2>Transitions, Transformations, Animations</h2>
   </header>
 
-  <main class="layout">
-
-    <!-- О нас -->
-
-    <section class="section-box about" id="about-section">
-      
-        <div class="about-image-box ">
-          <img src="./images/aboutUs2 (1).jpg" alt="пример стрижки бороды" width: 270px>
-          <img src="./images/aboutUs2 (2).jpg" alt="пример мужской стрижки" width: 270px>
-        </div>
-        <div class="text-about">
-          <span class="suptitle-primary about"> О нас</span>
-          <h2 class="section-title about">Лучший Барбершоп твоего города</h2>
-          <h3 class="section-suptitle about">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
-          <p class="section-description about">Мы команда, которая никогда не останавливается на достигнутом
-            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
-            готовы усовершенствовать каждого, кто к нам приходит!</p>
-          <a href="#footer" class="primary-btn darken ">Онлайн-запись</a>
-        </div>
-      
-    </section>
-
-
-<!-- Услуги и цены -->
-<section class="section-box price" id="price-section">
-  
-    <span class="suptitle-secondary price">Проведи время в компании лучших мастеров</span>
-    <h2 class="section-title lighten ">Услуги и цены</h2>
-    <div class="price-box">
-      <ul class="price list"> 
-          <li class="price-item"> 
-          <p>Мужская стрижка <span>от 300 грн.</span></p></li>
-        <li class="price-item">
-          <p>Стрижка бороды</p> <span>от 200 грн.</span></li>
-        <li class="price-item">
-          <p>Стрижка усов</p> <span>от 200 грн.</span></li>
-        <li class="price-item">
-          <p>Бритье опасной бритвой </p> <span>от 200 грн.</span></li>
-      </ul>
-      <ul class="price list">
-        <li class="price-item"> 
-          <p>Cтрижка у стажера</p> <span> от 50 грн.</span></li>
-        <li class="price-item">
-          <p>Стрижка под насадку </p> <span>от 200 грн.</span></li>
-        <li class="price-item"> 
-          <p>Детская стрижка (до 12 лет)</p> <span> от 300 грн.</span></li>
-        <li class="price-item">
-          <p>Камуфлирование седины </p> <span>от 200 грн.</span></li>
-      </ul>
-    </div>
-    <a href="#footer" class="primary-btn">Запись онлайн</a>
-  
-</section>
-
-<!-- Почему мы -->
- <section class="section-box why"id="why-section">
-  
-    <div class="number-container">
-      <div class="number-box">
-        <p>600</p>
-        <span>Довольных клиентов в день</span>
-      </div>
-      <div class="number-box">
-        <p>50</p>
-        <span>Наград за отличный сервис</span>
-      </div>
-      <div class="number-box">
-        <p>20</p>
-        <span>Лучших мастеров Киева</span>
-      </div>
-      <div class="number-box">
-        <p>100</p>
-        <span class="numder-box last">Подарков постоянным клиентам</span>
-      </div>
-    </div>
-    <div class="description-container">
-      <span class="suptitle-primary why">старая традиционная школа</span>
-      <h2 class="section-title why">Почему приходят именно к нам?</h2>
-      <h3 class="section-subtitle why">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</h3>
-    </div>
-  
+  <section>
+    <div class="box first"></div>
+    <div class="box second"></div>
+    <div class="box third">3</div>
   </section>
 
-<!-- Наши мастера -->
-<section class="section-box masters" id="masters-section">
-  
-    <span class="suptitle-primary masters"> для настоящих ценителей атмосферы </span>
-    <h2 class="section-title masters"> Наши мастера</h2>
-    <ul class="master list">
-      <li class="master-card"> 
-        
-          <img src="./images/JohnSmith (1).jpg" alt="Экстремальный парикмахер Джон Смит" width: 370px>
-          <p>John Smith</p>
-          <span>Extreme Barber</span>
-          <div class="master-social box">
-            <a href="#" class="master-social link">Instagram</a>
-            <a href="#" class="master-social link">Twitter</a>
-            <a href="#" class="master-social link">Facebook</a>
-            <a href="#" class="master-social link">LinkeIn</a>
+  <section>
+    <div class="card first">
+      <div class="card-image"></div>
+      <div class="card-description"></div>
+    </div>
+    <div class="card second">
+      <div class="card-image"></div>
+      <div class="card-description"></div>
+    </div>
+    <div class="card third">
+      <div class="card-image"></div>
+      <div class="card-description"></div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="flipper">
+        <div class="front">
+          <div class="header">
+            <i class="fa fa-creative-commons fa-2x"></i>
+            <h3>Wedding Agency</h3>
           </div>
-        
-      </li>
-      <li class="master-card">
-        
-          <img src="./images/MicheleDoe (1).jpg" alt="Экстремальный парикмахер Михель До" width: 370px>
-          <p>Michele Doe</p>
-          <span>Extreme Barber</span>
-          <div class="master-social box">
-            <a href="#" class="master-social link">Instagram</a>
-            <a href="#" class="master-social link">Twitter</a>
-            <a href="#" class="master-social link">Facebook</a>
-            <a href="#" class="master-social link">LinkeIn</a>
-          </div>
-        
-      </li>
-      <li class="master-card">
-        
-          <img src="./images/AlanBlack (1).jpg" alt="Экстремальный парикмахер Алан Блэк" width: 370px>
-            <p>Alan Black</p>
-            <span>Extreme Barber</span>
-            <div class="master-social box">
-              <a href="#" class="master-social-link">Instagram</a>
-              <a href="#" class="master-social link">Twitter</a>
-              <a href="#" class="master-social link">Facebook</a>
-              <a href="#" class="master-social link">LinkeIn</a>
-            </div>
-        
-        
-      </li>
-    </ul>
-  
-</section>
-
-<!-- Галерея-->
-<section class="section-box gallery">
-  
-    <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
-    <div class="image-gallery list">
-      <li><img src="./images/example1.jpg" alt="фото стрижки" width: 270px></li>
-      <li><img src="./images/example2.jpg" alt="фото процесс стилизации бороды" width: 270px></li>
-      <li><img src="./images/example3.jpg" alt="фото бороды" width: 270px></li>
-      <li><img src="./images/example4.jpg" alt="мастер делает мужскую стрижку" width: 270px></li>
-    </div>
-  
-</section>
-
-</main>
-<footer class="footer" id="footer">
-  
-    <div>
-      <h2 class="section-title">Онлайн-запись</h2>
-      <form action="">
-
-      </form>
-      <input type="submit" class="primary-btn"> Отправить</input>
-    </div>
-    <div>
-      <h2 class="section-title lighten">Контакты</h2>
-      <div class="contacts-box">
-        
-          <adress>ул. Васильковая, 7А <br/>Киев, 08132</adress>
-          <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
-          <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-        
-    </div>
-    <div class="shedule-box">
-        <span class="subtitle-secondary"> Время работы</span>
-        <p>Ежедневно с 9:00 до 22:00</p>
-    </div>
-  
-</footer>
-
-  <div class="copyright">
-     <p class="copy-text"> &#169;Copyright <span>2020</span></p>
-      <div class="social-box">
-        <a href="#" class="social-link">Instagram</a>
-        <a href="#" class="social-link">Youtube"</a>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+        </div>
+        <div class="back">
+          <h3>About Us</h3>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt. </p>
+        </div>
       </div>
-  </div>
-  
+    </div>
+  </section>
+
 </body>
+
 </html>
